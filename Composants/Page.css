@@ -1,0 +1,147 @@
+body{
+    background-color: #d7c1f5;
+    font-family: Italiana;
+         
+}
+
+
+
+/* couleur automatique */
+:root {
+  --bulma-primary-h: 265deg;
+  --bulma-primary-s: 72%;
+  --bulma-primary-l: 86%;    
+  --bulma-warning-h: 287deg;
+  --bulma-warning-s: 23%;
+  --bulma-warning-l: 39%; 
+}
+
+
+
+/* Soulignement des boutons */
+/* Header */
+.underline-lower {
+  position: relative; 
+  text-decoration: none; 
+}
+.underline-lower::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; 
+  left: 50%; 
+  width: 0%; 
+  height: 1px; 
+  background-color: #000; 
+  transform: translateX(-50%); 
+  transition: width 0.3s ease-in-out; /
+}
+.underline-lower:hover::after {
+  width: 80%; 
+}
+/* Body */
+.underline-low {
+  position: relative; 
+  text-decoration: none; 
+}
+.underline-low::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5px; 
+  left: 50%; 
+  width: 0%; 
+  height: 1px; 
+  background-color: black; 
+  transform: translateX(-50%); 
+  transition: width 0.3s ease-in-out; 
+}
+.underline-low:hover::after {
+  width: 80%; 
+}
+
+
+
+/* Fon des boutons */
+button{
+  background: transparent;
+}
+
+
+
+/* Titre */
+.PreNom{
+  font-family: Rock Salt;
+  color: #ffffff;
+}
+
+
+
+/* Border-radius */
+.icon-border-radius{
+  border-radius: 10px;
+}
+.border-radius1{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.border-radius2{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.round-image{
+  border-radius: 100%;
+}
+
+
+
+/* Soulignement animation */
+.navbar-item:hover {
+  background-color: transparent 
+}
+
+
+
+/* Compétences */
+.card-content {
+  display: none;
+}
+input[type="checkbox"]:checked + .card-header + .card-content {
+  display: block;
+}
+
+
+/* Alignement compétences */
+.block:not(:last-child) {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.not-aligned{
+  transform: translate(23px, -24px);
+}
+
+
+
+
+/* Point ligne point */
+.point {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.ligne {
+  width: 4px;
+  height: 125px;
+  background-color: #ddd;
+}
+
+
+
+.hover-effect {
+  transition: transform 250ms ease-in-out;
+}
+.hover-effect:hover {
+  transform: scale(1.05);
+}
